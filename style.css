@@ -4,33 +4,30 @@
 }
 
 html {
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
-    background-image: linear-gradient(34deg, rgba(168,205,231,1) 15%, rgba(74,163,207,1) 100%);
+    background-color: #f3e8c8;
     ;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    width: 100%;
+    max-width: 100%;
     height: 100%;
 
 }
 
-.logo {
+.header {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 20px;
 }
 
-.logo > img {
-    width: 150px;
-    height: 150px;
-    border-radius: 100%;
+.header > img {
+    max-width: 600px;
 }
 
 .product {
@@ -40,16 +37,19 @@ html {
     justify-content: center;
 }
 
-.product > a {
-    padding-bottom: 10px;
+.product > a > img{
+    margin-bottom: -15px;
+    max-width: 500px;
 }
+
 
 p {
     font-weight: 600;
-    font-size: 28px;
+    font-size: 50px;
     line-height: 48px;
     padding-top: 20px;
     padding-bottom: 15px;
+    color: #2e7cd9;
 }
 
 .online-store {
@@ -59,19 +59,26 @@ p {
     justify-content: center;
 }
 
-.online-store > a {
-    padding-bottom: 10px;
+.online-store > a > img{
+    margin-bottom: -10px;
+    max-width: 350px;
 }
 
-.offline-store {
+.offline-store-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.offline-store > a {
-    padding-bottom: 10px;
+.offline-store {
+    display: grid;
+    grid-template-columns: auto auto;    
+}
+
+.offline-store > a > img{
+    margin-bottom: -10px;    
+    max-width: 320px;    
 }
 
 .business {
@@ -81,6 +88,6 @@ p {
     justify-content: center;
 }
 
-.business > a {
-    padding-bottom: 10px;
+.business > a > img{
+    max-width: 320px;
 }
