@@ -7,9 +7,11 @@ html {
   font-family: "Poppins", sans-serif;
 }
 
-.container {
+body{
     background-color: #f3e8c8;
-    ;
+
+}
+.container {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
